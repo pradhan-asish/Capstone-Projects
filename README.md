@@ -1,2 +1,2 @@
 # Capstone-Projects
-Capstone projets created
+Capstone projects created
