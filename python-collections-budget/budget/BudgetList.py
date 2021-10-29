@@ -1,2 +1,2 @@
 class BudgetList():
-    Pass
+    pass
