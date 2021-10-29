@@ -10,4 +10,5 @@ class BudgetList():
             self.sum_expenses = self.sum_expenses + item
             self.expenses.append(item)
         else :
-            
+            self.overages.append(item)
+            self.sum_overages = self.sum_overages + item
