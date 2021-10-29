@@ -18,3 +18,4 @@ class BudgetList():
 
 def main():
     myBudgetList = BudgetList(1200)
+    print('Budget:')
