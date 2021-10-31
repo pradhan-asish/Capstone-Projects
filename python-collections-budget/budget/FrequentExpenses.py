@@ -1,1 +1,3 @@
-import Expenses
+import Expense
+
+expenses = Expense.Expenses()
