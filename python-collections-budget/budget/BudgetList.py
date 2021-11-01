@@ -40,6 +40,7 @@ def main():
     labels = ['Expenses','Overages','Budget']
     values = [myBudgetList.sum_expenses,myBudgetList.sum_overages,myBudgetList.budget]
     ax.bar(labels,values,color = ['green','red','blue'])
+    ax.set_title('Your total expenes vs. total budget')
 
 
 main()
