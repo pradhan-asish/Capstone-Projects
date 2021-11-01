@@ -1,4 +1,5 @@
 import Expense
+import matplotlib.pyplot as plt
 
 class BudgetList():
     def __init__(self,budget):
@@ -35,5 +36,6 @@ def main():
     print('The count of all expenses: ', myBudgetList.__len__())
     for entry in myBudgetList:
         print(entry)
+
 
 main()
