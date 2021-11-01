@@ -37,7 +37,7 @@ def main():
 ##    for entry in myBudgetList:
 ##        print(entry)
     fig, ax = plt.subplots()
-    labels = list('Expenses','Overages','Budget')
-    values = list(myBudgetList.sum_expenses,myBudgetList.sum_overages,myBudgetList.budget)
+    labels = ['Expenses','Overages','Budget']
+    values = [myBudgetList.sum_expenses,myBudgetList.sum_overages,myBudgetList.budget]
 
 main()
