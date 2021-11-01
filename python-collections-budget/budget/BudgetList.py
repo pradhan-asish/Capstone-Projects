@@ -36,6 +36,7 @@ def main():
     print('The count of all expenses: ', myBudgetList.__len__())
     for entry in myBudgetList:
         print(entry)
-
+    fig, ax = plt.subplots()
+    
 
 main()
