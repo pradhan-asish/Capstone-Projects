@@ -47,5 +47,5 @@ class Expenses():
                 if (x.category == 'Phone' | x.category == 'Auto and Gas' | x.category == 'Utilitsies' | x.category == 'Mortgage' ):
                     necessary_expenses.append(x)
             food_expenses = {x for x in self.list  if (x.category == 'Groceries' | x.category == 'Eating Out' ) }
-            unnecessary_expenses.set(self.list)
+            unnecessary_expenses.set(self.list)-necessary_expenses-food_expenses
             
