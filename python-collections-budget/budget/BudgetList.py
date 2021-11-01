@@ -37,6 +37,6 @@ def main():
     for entry in myBudgetList:
         print(entry)
     fig, ax = plt.subplots()
-    
+    labels = list('Expenses','Overages','Budget')
 
 main()
