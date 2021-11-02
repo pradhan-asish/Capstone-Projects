@@ -9,9 +9,5 @@ def main():
     if (divided_for_loop != divided_set_comp) :
         print('Sets are NOT equal by == test')
 
-
-
-
-
 if __name__ == "__main__":
     main()
