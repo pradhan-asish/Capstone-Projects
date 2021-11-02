@@ -1,6 +1,6 @@
 import Expense
 import matplotlib.pyplot as plt
-import timeit 
+import timeit
 def main():
     expenses = Expense.Expenses()
     expenses.read_expenses('data/spending_data.csv')
@@ -12,7 +12,10 @@ def main():
         if ((a.issubset(b) or b.issubset(a))):
             print('Sets are not equal by subset test')
 
-
+    stmt = "pass"
+    setup = '''
+            '''
+    timeit.timeit(stmt = stmt,setup = setup ,number=10000)
 
 
 if __name__ == "__main__":
