@@ -12,9 +12,12 @@ def main():
         if ((a.issubset(b) or b.issubset(a))):
             print('Sets are not equal by subset test')
 
-    stmt = "pass"
+    stmt = "expenses.categorize_for_loop()"
     setup = '''
-            '''
+import Expense
+expenses = Expense.Expenses()
+expenses.read_expenses('data/spending_data.csv')'''
+
     timeit.timeit(stmt = stmt,setup = setup ,number=10000)
 
 
