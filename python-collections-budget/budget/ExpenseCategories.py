@@ -29,6 +29,8 @@ expenses.read_expenses('data/spending_data.csv')'''
     print(timeit.timeit(stmt = stmt,setup = setup ,number=10000))
 
     fig,ax = plt.subplots()
-    
+    labels = ['Necessary','Food','Unnecessary']
+    divided_expenses_sum = []
+
 if __name__ == "__main__":
     main()
