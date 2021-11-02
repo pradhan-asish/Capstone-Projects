@@ -18,8 +18,17 @@ import Expense
 expenses = Expense.Expenses()
 expenses.read_expenses('data/spending_data.csv')'''
 
-    timeit.timeit(stmt = stmt,setup = setup ,number=10000)
+    print(timeit.timeit(stmt = stmt,setup = setup ,number=10000))
+    stmt = "expenses.categorize_set_comprehension()"
 
+    setup = '''
+import Expense
+expenses = Expense.Expenses()
+expenses.read_expenses('data/spending_data.csv')'''
 
+    print(timeit.timeit(stmt = stmt,setup = setup ,number=10000))
+
+    fig,ax = plt.subplots()
+    
 if __name__ == "__main__":
     main()
