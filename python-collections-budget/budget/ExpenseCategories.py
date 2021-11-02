@@ -8,6 +8,7 @@ def main():
     divided_set_comp = expenses.categorize_set_comprehension()
     if (divided_for_loop != divided_set_comp) :
         print('Sets are NOT equal by == test')
-
+    for a,b in zip(divided_for_loop,divided_set_comp):
+        pass
 if __name__ == "__main__":
     main()
