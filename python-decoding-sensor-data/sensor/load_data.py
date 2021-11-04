@@ -8,5 +8,5 @@ def load_sensor_data():
         with open(sensor_file) as data_file:
             data_reader = csv.DictReader(data_file,delimiter=',')
             for row in data_file:
-                pass
+                sensor_data.append(row)
 load_sensor_data()
