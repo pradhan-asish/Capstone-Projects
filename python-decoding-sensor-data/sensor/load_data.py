@@ -6,4 +6,4 @@ def load_sensor_data():
     print(sensor_files)
     for sensor_file in sensor_files:
         with open(sensor_file) as data_file:
-            pass 
+            data_reader = csv.DictReader(data_file,delimiter=',') 
