@@ -3,3 +3,6 @@
 class HouseInfo():
     def __init__(self,data):
         pass
+    def get_data_by_area(self,field,rec_area):
+        rec_area = 0
+        field_data = []
