@@ -10,6 +10,9 @@ print("Sensor Data App")
 data = load_sensor_data()
 print("Loaded records: {}",format(len(data)))
 house_info = HouseInfo(data)
+test_area=1
+recs = house_info.get_data_by_area("id",test_area)
+print("\nHouse sensor records for area {} = {}".format(test_area,len(recs)))
 ##############################
 
 # Module 1 code here:
