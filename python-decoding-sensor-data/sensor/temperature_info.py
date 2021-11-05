@@ -9,3 +9,4 @@ class TemperatureData(HouseInfo):
         return recs
     def get_data_by_area(self,rec_area):
         rec_area = 0
+        rec = super.get_data_by_area("temperature",rec_area)
