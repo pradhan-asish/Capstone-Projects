@@ -8,4 +8,4 @@ class TemperatureData(HouseInfo):
             recs.append(int(rec,base=10))
         return recs
     def get_data_by_area(self,rec_area):
-        pass
+        rec_area = 0
