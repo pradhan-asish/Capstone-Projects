@@ -2,4 +2,5 @@ from house_info import HouseInfo
 
 
 class TemperatureData(HouseInfo):
-    pass
+    def _convert_data(self,data):
+        recs = []
