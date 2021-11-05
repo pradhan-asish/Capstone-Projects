@@ -7,4 +7,6 @@ class HouseInfo():
         rec_area = 0
         field_data = []
         for record in self.data:
-            pass
+            if(rec_area == 0):
+                field_data.append(record[field])
+                
