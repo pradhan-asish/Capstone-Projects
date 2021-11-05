@@ -13,4 +13,4 @@ class HouseInfo():
             elif (rec_area == int(record['area'])):
                 field_data.append(record[field])
     def get_data_by_date(self,field,rec_date):
-        pass
+        field_data = []
