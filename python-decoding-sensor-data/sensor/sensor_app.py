@@ -6,6 +6,7 @@ from datetime import date
 from datetime import datetime
 from temperature_info import TemperatureData
 from humidity_info import HumidityData
+from statistics import mean
 ##############################
 # Do not remove these two lines
 # They are needed to validate your unittest
@@ -24,12 +25,13 @@ temperature_data = TemperatureData(data)
 recs = temperature_data.get_data_by_area(test_area)
 print("\nHouse Temperature sensor records for area {} = {}".format(test_area,len(recs)))
 #print("\tMaximum: {0}, Minimum: {1} temperatures".format(max(recs),min(recs)))
-recs = temperature_data.get_data_by_date(test_date)
-#print("\nHouse Temperature sensor records for date: {} = {}".format(test_date.strftime("%m/%d/%y"),len(recs)))
+##print("\nHouse Temperature sensor records for date: {} = {}".format(test_date.strftime("%m/%d/%y"),len(recs)))
 #print("\tMaximum: {0}, Minimum: {1} temperatures".format(max(recs),min(recs)))
 
 humidity_data = HumidityData(data)
-
+recs = humidity_data.get_data_by_area(test_area)
+print("\nHouse Humidity sensor records for area {} = {}".format(test_area,len(recs)))
+print("\tAverage: {} humidity".format(mean(recs)))
 ##############################
 
 # Module 1 code here:
