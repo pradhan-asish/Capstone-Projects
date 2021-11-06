@@ -4,7 +4,7 @@ from load_data import load_sensor_data
 from house_info import HouseInfo
 from datetime import date
 from datetime import datetime
-
+from temperature_info import TemperatureData
 ##############################
 # Do not remove these two lines
 # They are needed to validate your unittest
