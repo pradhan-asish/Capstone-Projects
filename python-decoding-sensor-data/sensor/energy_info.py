@@ -11,3 +11,10 @@ class EnergyData(HouseInfo):
         for rec in data:
             recs.append(_get_energy(rec))
         return recs
+    def get_data_by_area(self, rec_area=0):
+        recs = super().get_data_by_area("energy_usage", rec_area)
+        return self._convert_data(recs)
+
+    def get_data_by_date(self, rec_date=date.today()):
+        recs = super().get_data_by_date("energy_usage", rec_date)
+        return self._convert_data(recs)
