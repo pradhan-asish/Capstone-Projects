@@ -53,3 +53,11 @@ print("\tModerate Air Quality Recs: {}".format(concentrations["moderate"]))
 print("\tBad Air Quality Recs: {}".format(concentrations["bad"]))
 # Module 5 code here:
 energy_data = EnergyData(data)
+recs=energy_data.get_data_by_area(test_area)
+print("\nHouse Energy sensor records for area {} = {}".format(test_area, len(recs)))
+print("\tEnergy Usage: {:2.2} Watts".format(total_energy))
+
+
+
+print("House Energy sensor records for date: {} = {}".format( test_date.strftime("%m/%d/%y"), len(recs)))
+print("\tEnergy Usage: {:2.2} Watts".format(total_energy))
