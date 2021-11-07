@@ -8,6 +8,7 @@ from temperature_info import TemperatureData
 from humidity_info import HumidityData
 from particle_count_info import ParticleData
 from statistics import mean
+from energy_info import EnergyData
 ##############################
 # Do not remove these two lines
 # They are needed to validate your unittest
