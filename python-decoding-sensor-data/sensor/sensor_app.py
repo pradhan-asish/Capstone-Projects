@@ -35,8 +35,15 @@ print("\nHouse Temperature sensor records for area {} = {}".format(test_area,len
 humidity_data = HumidityData(data)
 recs = humidity_data.get_data_by_area(test_area)
 print("\nHouse Humidity sensor records for area {} = {}".format(test_area,len(recs)))
-print("\tAverage: {} humidity".format(mean(recs)))
+#print("\tAverage: {} humidity".format(mean(recs)))
 # Module 4 code here:
 particle_data=ParticleData(data)
+recs = particle_data.get_data_by_area(test_area)
+print("\nHouse Particle sensor records for area {} = {}".format(test_area, len(recs)))
+concentrations = particle_data.get_data_concentrations(recs)
+print("\tGood Air Quality Recs: {}".format(concentrations["good"]))
+print("\tModerate Air Quality Recs: {}".format(concentrations["moderate"]))
+print("\tBad Air Quality Recs: {}".format(concentrations["bad"]))
+
 
 # Module 5 code here:
