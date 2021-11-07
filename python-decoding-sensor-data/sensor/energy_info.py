@@ -5,3 +5,4 @@ class EnergyData(HouseInfo):
     ENERGY_BITS = 0x0F0
     def _get_energy(self,rec):
         pass
+    
