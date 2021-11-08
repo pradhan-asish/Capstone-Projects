@@ -1,7 +1,7 @@
 import os
 import glob
 import pandas as pd
-
+import numpy as np
 
 game_files = glob.glob(os.path.join(os.getcwd(),'games','*.EVE'))
 print(os.path.join(os.getcwd(),'games','*.EVE'))
@@ -20,3 +20,6 @@ identifiers = identifiers.fillna(method='ffill')
 #identifiers = pd.DataFrame(identifiers,columns=list("game_id","year"))
 identifiers.columns = ['game_id','year']
 games = pd.concat([games,identifiers],axis=1,sort=False)
+
+games.fillna(' ',inplace =True)
+print(games)
