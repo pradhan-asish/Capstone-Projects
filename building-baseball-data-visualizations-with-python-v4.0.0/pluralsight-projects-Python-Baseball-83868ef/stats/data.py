@@ -20,3 +20,5 @@ identifiers = identifiers.fillna(method='ffill')
 #identifiers = pd.DataFrame(identifiers,columns=list("game_id","year"))
 identifiers.columns = ['game_id','year']
 print(identifiers)
+games = pd.concat([games,identifiers],axis=1,sort=False)
+print(games)
