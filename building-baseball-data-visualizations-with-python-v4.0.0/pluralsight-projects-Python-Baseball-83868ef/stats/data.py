@@ -23,4 +23,5 @@ games = pd.concat([games,identifiers],axis=1,sort=False)
 
 games.fillna(' ',inplace =True)
 #print(games)
+type(games.loc[:])
 print(pd.Categorical(games))
