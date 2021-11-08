@@ -22,4 +22,5 @@ identifiers.columns = ['game_id','year']
 games = pd.concat([games,identifiers],axis=1,sort=False)
 
 games.fillna(' ',inplace =True)
-print(games)
+#print(games)
+print(pd.Categorical(games))
