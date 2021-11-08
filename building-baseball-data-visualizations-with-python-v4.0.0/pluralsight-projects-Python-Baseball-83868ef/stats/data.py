@@ -19,6 +19,4 @@ identifiers = games['multi2'].str.extract(r'(.LS(\d{4})\d{5})')
 identifiers = identifiers.fillna(method='ffill')
 #identifiers = pd.DataFrame(identifiers,columns=list("game_id","year"))
 identifiers.columns = ['game_id','year']
-print(identifiers)
 games = pd.concat([games,identifiers],axis=1,sort=False)
-print(games)
