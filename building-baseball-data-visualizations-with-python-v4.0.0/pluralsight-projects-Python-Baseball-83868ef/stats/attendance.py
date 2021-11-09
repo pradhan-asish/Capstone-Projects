@@ -4,9 +4,14 @@ from data import games
 
 print(games)
 
-attendence = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendance'),['year','multi3']]
-print(attendence.info())
-attendence.columns = ['year','attendence']
-print(attendence)
+attendance = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendance'),['year','multi3']]
+print(attendance.info())
+attendance.columns = ['year','attendance']
+print(attendance)
 
-attendence.loc[:,'attendence'] = pd.to_numeric(attendence.loc[:,'attendence'])
+attendance.loc[:,'attendance'] = pd.to_numeric(attendance.loc[:,'attendance'])
+
+py.plot(attendance['year'],attendance['attendance'])
+
+py.plot(figsize=(15,7),kind='bar')
+py.show()
