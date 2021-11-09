@@ -6,3 +6,4 @@ print(games)
 
 atendence = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendence'),['year','multi3']]
 print(atendence.info())
+atendence.columns = ['year','attendence']
