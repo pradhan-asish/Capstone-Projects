@@ -5,5 +5,5 @@ from data import games
 
 plays = games.loc[(games['type'] == 'play')]
 print(plays)
-strike_outs = plays[plays['type'].str.contains('K')]
+strike_outs = games[games['event'].str.contains('K')]
 print(strike_outs)
