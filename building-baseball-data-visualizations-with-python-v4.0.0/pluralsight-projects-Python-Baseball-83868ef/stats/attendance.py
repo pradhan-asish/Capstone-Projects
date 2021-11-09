@@ -14,4 +14,6 @@ attendance.loc[:,'attendance'] = pd.to_numeric(attendance.loc[:,'attendance'])
 py.plot(attendance['year'],attendance['attendance'])
 
 py.plot(figsize=(15,7),kind='bar')
+py.xlabel('Year')
+py.ylabel('Attendance')
 py.show()
