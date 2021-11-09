@@ -4,6 +4,7 @@ from data import games
 
 print(games)
 
-atendence = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendence'),['year','multi3']]
+atendence = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendance'),['year','multi3']]
 print(atendence.info())
 atendence.columns = ['year','attendence']
+print(atendence)
