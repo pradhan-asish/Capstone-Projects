@@ -4,9 +4,9 @@ from data import games
 
 print(games)
 
-atendence = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendance'),['year','multi3']]
-print(atendence.info())
-atendence.columns = ['year','attendence']
-print(atendence)
+attendence = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendance'),['year','multi3']]
+print(attendence.info())
+attendence.columns = ['year','attendence']
+print(attendence)
 
-atendence.loc[:,'attendence'] = pd.to_numeric(atendence.loc[:,'attendence'])
+attendence.loc[:,'attendence'] = pd.to_numeric(attendence.loc[:,'attendence'])
