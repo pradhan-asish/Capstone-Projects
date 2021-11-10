@@ -8,4 +8,4 @@ print(plays)
 plays.columns = ['year','inning','team','player','count','pitches','event','game_id','year']
 print(plays.describe())
 
-hits = plays.loc[re.search(r"^(?:S(?!B)|D|T|HR)",plays['event']),['inning','event']]
+hits = plays.loc[plays['event'].contains(re.search(r"^(?:S(?!B)|D|T|HR)",plays['event'])),['inning','event']]
