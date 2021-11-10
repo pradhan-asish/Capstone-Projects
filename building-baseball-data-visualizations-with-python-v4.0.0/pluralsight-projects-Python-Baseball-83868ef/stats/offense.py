@@ -15,3 +15,5 @@ hits.loc[:,'inning'] = pd.to_numeric(hits.loc[:,'inning'])
 replacements = {r'^S(.*)': 'single',r'^D(.*)': 'double',r'^T(.*)': 'triple',r'^HR(.*)': 'hr'}
 
 hit_type = hits['event'].replace(replacements,regex=True)
+
+hits=hits.groupby(['inning','event']).size()
