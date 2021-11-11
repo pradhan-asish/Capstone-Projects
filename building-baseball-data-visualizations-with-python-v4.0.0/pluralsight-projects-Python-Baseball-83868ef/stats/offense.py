@@ -18,3 +18,4 @@ hit_type = hits['event'].replace(replacements,regex=True)
 
 hits=hits.groupby(['inning','event']).size()
 hits = hits.reset_index(name = 'count')
+print(hits)
