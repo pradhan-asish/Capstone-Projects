@@ -21,3 +21,4 @@ hits = hits.reset_index(name = 'count')
 print(hits)
 
 #pd.Categorical( hits['hit_type'] , ['single','double','triple','hr'])
+hits.sort_values(by=['inning'])
