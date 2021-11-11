@@ -16,9 +16,14 @@ replacements = {r'^S(.*)': 'single',r'^D(.*)': 'double',r'^T(.*)': 'triple',r'^H
 
 hit_type = hits['event'].replace(replacements,regex=True)
 
-hits=hits.groupby(['inning','event']).size()
+hits=hits.groupby(['inning','hit_type']).size()
 hits = hits.reset_index(name = 'count')
 print(hits)
 
 #pd.Categorical( hits['hit_type'] , ['single','double','triple','hr'])
+#hits['hit_type']=pd.Categorical(hits['hit_type'] ,categories=['single','double','triple','hr'])
+
+
 hits.sort_values(by=['inning'])
+
+#hits.pivot(index='inning',colums='hit_type',values='count')
