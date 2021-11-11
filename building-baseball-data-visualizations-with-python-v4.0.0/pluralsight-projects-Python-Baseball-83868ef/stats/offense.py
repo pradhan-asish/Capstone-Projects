@@ -20,4 +20,4 @@ hits=hits.groupby(['inning','event']).size()
 hits = hits.reset_index(name = 'count')
 print(hits)
 
-pd.Categorical( hits['hit_type'] : ['single','double','triple','hr'])
+#pd.Categorical( hits['hit_type'] , ['single','double','triple','hr'])
