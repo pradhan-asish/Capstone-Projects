@@ -25,3 +25,5 @@ pd.Categorical(hits['hit_type'] ,categories=['single','double','triple','hr'])
 hits.sort_values(by=['inning'])
 
 hits.pivot(index='inning',columns='hit_type',values='count')
+
+print(hits)
