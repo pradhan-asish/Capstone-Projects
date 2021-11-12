@@ -27,5 +27,10 @@ hits.sort_values(by=['inning'])
 hits.pivot(index='inning',columns='hit_type',values='count')
 
 print(hits)
-plt.plot(hits['inning'],hits['count'])
+
+fig, ax = plt.subplots()
+
+ax.bar(hits['hit_type'], hits['count'])
+
+ax.legend()
 plt.show()
