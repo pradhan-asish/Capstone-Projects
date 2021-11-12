@@ -22,7 +22,7 @@ print(hits)
 
 #pd.Categorical( hits['hit_type'] , ['single','double','triple','hr'])
 #hits['hit_type']=pd.Categorical(hits['hit_type'] ,categories=['single','double','triple','hr'])
-
+pd.Categorical(hits['hit_type'] ,categories=['single','double','triple','hr'])
 
 hits.sort_values(by=['inning'])
 
