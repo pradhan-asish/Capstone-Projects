@@ -27,3 +27,5 @@ hits.sort_values(by=['inning'])
 hits.pivot(index='inning',columns='hit_type',values='count')
 
 print(hits)
+plt.plot(hits['inning'],hits['count'])
+plt.show()
