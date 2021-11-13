@@ -7,4 +7,9 @@ from frames import events
 
 #plays = games.query()
 games.info()
-games.query('type == "play" and event != "NP" ',inplace = True)
+plays = games.query('type == "play" and event != "NP" ')
+
+
+
+plays.columns = ['type','inning','team','player','count','pitches','event','game_id','year']
+plays.info()
