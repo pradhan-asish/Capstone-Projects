@@ -21,3 +21,6 @@ events = events.set_index(['year','game_id','team','event_type'])
 events.unstack(level=0)
 events.fillna(0)
 events=events.reset_index()
+
+events.info()
+#events.columns = events.columns.droplevel()
