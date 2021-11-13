@@ -7,3 +7,4 @@ from frames import events
 
 #plays = games.query()
 games.info()
+games.query('type == "play" and event != "NP" ',inplace = True)
