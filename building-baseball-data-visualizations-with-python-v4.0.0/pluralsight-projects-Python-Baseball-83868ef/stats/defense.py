@@ -18,3 +18,4 @@ pa.info()
 
 pa = pa.groupby(['year','game_id','team']).size()
 events = events.set_index(['year','game_id','team','event_type'])
+events.unstack(level=0)
