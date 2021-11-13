@@ -24,3 +24,4 @@ events=events.reset_index()
 
 events.info()
 #events.columns = events.columns.droplevel()
+pa.merge(events,how='outer',on=['year','game_id','team'])
