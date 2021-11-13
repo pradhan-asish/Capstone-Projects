@@ -6,3 +6,4 @@ from frames import info
 from frames import events
 
 #plays = games.query()
+games.info()
